@@ -1,0 +1,24 @@
+#menu {
+   background-color:black;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   padding: 0;
+   margin: 0;
+   font-size: 25px;
+}
+#nav li {
+  display: inline-block;
+  text-align: left;
+  margin: 30px;
+}
+#nav_wrapper {
+  width: 950px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+h1{
+  margin: 300px;
+  text-align: center;
+}

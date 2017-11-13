@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>{% block title%}{% endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/songbase.css') }}">
+    <style media="screen">
+    #menu {
+       background-color:pink;
+       position: fixed;
+       width: 100%;
+       top: 0;
+       padding: 0;
+       margin: 0;
+       font-size: 18px;
+    }
+    #nav li {
+      display: inline;
+      text-align: right;
+      margin: 30px;
+    }
+    #nav_wrapper {
+      width: 950px;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+    #name{
+      text-align:left;
+      font-size: 30px;
+      color: white;
+    }
+    h1{
+      margin: 300px;
+      text-align: center;
+      color: pink;
+    }
+    </style>
+    {% endblock%}
+  </head>
+  <body>
+    <div id="menu">
+      <div id="nav_wrapper">
+      <ul id="nav">
+        <li><a href="home">Home</a></li>
+        <li><a href="course">Course</a></li>
+        <li><a href="about">About</a></li>
+        <li id="name">Wang Peiyu</li>
+      </ul>
+    </div>
+    </div>
+    {% block page_content%}
+    {% endblock%}
+      {% block scripts%}
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+      {% endblock%}
+  </body>
+</html>
